@@ -1,0 +1,100 @@
+.titulo{
+    display: flex;
+    background-color: #2e2e2e;
+    height: 100px;
+    width: 1050px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+
+.grid-parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 40px;
+    width: 1000px;
+    height: 1000px;
+    padding: 20px;
+}
+
+.box{
+    background-color: rgb(133, 133, 133);
+    transition: transform 0.5s ease;
+    overflow: hidden;
+}
+
+.box:hover {
+    transform: scale(1.1); /* Aumentamos el tamaño al pasar el cursor */
+  }
+
+.box:hover .hover-content {
+    display: block; /* Muestra el contenido alternativo al pasar el cursor */
+  }
+
+.hover-content {
+  position: absolute;
+  display: none; /* Inicialmente oculto */
+  top: 160px;
+  left: 0;
+  width: 95%;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #2e2e2e;
+  color: #fff;
+
+
+}
+.p{
+    width: 180px;
+}
+
+.ada{
+    width: 320px;
+    margin-top: 40px;
+
+}
+.alan{
+    width: 320px;
+    margin-top: 32px;
+
+}
+.hopper{
+    width: 330px;
+    margin-top: 32px;
+
+}
+
+.linus{
+    width: 350px;
+    margin-top: 40px;
+}
+
+.dennis{
+    width: 300px;
+    margin-top: 40px;
+
+}
+.tim{
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 20px;
+
+}
+
+.bjarne{
+    width: 500px;
+    margin-top: 30px;
+}
+
+.guido{
+    width: 400px;
+    margin-top: 30px;
+}
+.margaret{
+    width: 280px;
+    margin-top: 5px;
+    margin-left: 40px;
+}
