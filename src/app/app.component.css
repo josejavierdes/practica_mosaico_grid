@@ -13,6 +13,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+     "box1 box2 box3"
+     "box4 . box5"
+     "box6 box7 box8";
     gap: 40px;
     width: 1000px;
     height: 1000px;
@@ -25,17 +29,42 @@
     overflow: hidden;
 }
 
+.box1{
+    grid-area: box1;
+}
+.box2{
+    grid-area: box2;
+}
+.box3{
+    grid-area: box3;
+}
+.box4{
+    grid-area: box4;
+}
+.box5{
+    grid-area: box5;
+}
+.box6{
+    grid-area: box6;
+}
+.box7{
+    grid-area: box7;
+}
+.box8{
+    grid-area: box8;
+}
+
 .box:hover {
-    transform: scale(1.1); /* Aumentamos el tamaño al pasar el cursor */
+    transform: scale(1.1); 
   }
 
 .box:hover .hover-content {
-    display: block; /* Muestra el contenido alternativo al pasar el cursor */
+    display: block; 
   }
 
 .hover-content {
   position: absolute;
-  display: none; /* Inicialmente oculto */
+  display: none; 
   top: 160px;
   left: 0;
   width: 95%;
